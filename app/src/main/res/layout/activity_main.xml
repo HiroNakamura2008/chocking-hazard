@@ -85,8 +85,10 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="#F0F0F0F0"
             android:fontFamily="serif-monospace"
             android:text="iniciar"
+            android:textColor="#837777"
             android:textSize="60sp" />
     </LinearLayout>
 
