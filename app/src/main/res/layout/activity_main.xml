@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/border"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -44,6 +45,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/borda"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -51,9 +53,10 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/border"
             android:fontFamily="sans-serif-black"
-            android:text="Jogo da Forca"
-            android:textSize="60sp"
+            android:text=" Jogo da Forca "
+            android:textSize="55sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -61,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.25"
+        android:background="#FFFAFA"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -68,6 +72,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/border"
             android:fontFamily="sans-serif-smallcaps"
             android:text="Descubra a palavra antes de ser inforcado"
             android:textAlignment="center"
@@ -78,6 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.25"
+        android:background="@drawable/border"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -85,7 +91,7 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="#F0F0F0F0"
+            android:backgroundTint="#FFFAFA"
             android:fontFamily="serif-monospace"
             android:text="iniciar"
             android:textColor="#837777"

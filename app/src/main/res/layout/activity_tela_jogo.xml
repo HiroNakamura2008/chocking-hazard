@@ -61,8 +61,11 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Acerto"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border"
+                    android:fontFamily="serif-monospace"
+                    android:text=" Acerto "
+                    android:textColor="#00FF00"
                     android:textSize="24sp" />
             </LinearLayout>
 
@@ -77,6 +80,7 @@
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="0"
                     android:textSize="34sp" />
             </LinearLayout>
@@ -110,8 +114,11 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Erro"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border"
+                    android:fontFamily="serif-monospace"
+                    android:text="  Erro  "
+                    android:textColor="#FF0000"
                     android:textSize="24sp" />
             </LinearLayout>
 
@@ -126,6 +133,7 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="⅒"
                     android:textSize="34sp" />
             </LinearLayout>
@@ -145,7 +153,9 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="P A R A L E L E P I P E D O"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif-black"
+            android:text="  P A R A L E L E P I P E D O  "
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
