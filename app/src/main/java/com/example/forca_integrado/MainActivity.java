@@ -1,5 +1,6 @@
 package com.example.forca_integrado;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button b;
+    private Button b, btn;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +28,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         b = findViewById(R.id.button);
         b.setOnClickListener(this);
+        btn = findViewById(R.id.config);
+        btn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        startActivity(new Intent(this, TelaJogo.class));
+
+        if(view == b){
+
+            startActivity(new Intent(this, TelaJogo.class));
+
+        }
+
+        if(view == btn){
+
+            startActivity(new Intent(this, MainActivityJogo.class));
+
+        }
+
     }
+
 }

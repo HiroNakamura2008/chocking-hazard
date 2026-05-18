@@ -88,9 +88,15 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações" />
+
+        <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:backgroundTint="#FFFAFA"
             android:fontFamily="serif-monospace"
             android:text="iniciar"
