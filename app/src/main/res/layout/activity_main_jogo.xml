@@ -44,7 +44,7 @@
         android:layout_margin="10dp"
         android:layout_weight="0.4"
         android:background="@drawable/borda"
-        android:gravity="fill_vertical"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
