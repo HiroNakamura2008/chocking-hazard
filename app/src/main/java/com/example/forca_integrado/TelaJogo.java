@@ -63,19 +63,19 @@ public class TelaJogo extends AppCompatActivity implements View.OnClickListener 
         listaImagens.add(R.drawable.forca_11_9);
 
         listaPalavras =  new ArrayList<String>();
-        listaPalavras.add(" CAIXA ");
-        listaPalavras.add(" BOLA ");
-        listaPalavras.add(" TOMATE ");
-        listaPalavras.add(" ABACAXI ");
-        listaPalavras.add(" CARRETA ");
-        listaPalavras.add(" ELEFANTE ");
-        listaPalavras.add(" MACACO ");
-        listaPalavras.add(" MELANCIA ");
-        listaPalavras.add(" ASFALTO ");
-        listaPalavras.add(" FORMULA ");
-        listaPalavras.add(" TREMEMBE ");
-        listaPalavras.add(" ESCOLA ");
-        listaPalavras.add(" UNIVERSIDADE ");
+        listaPalavras.add("CAIXA");
+        listaPalavras.add("BOLA");
+        listaPalavras.add("TOMATE");
+        listaPalavras.add("ABACAXI");
+        listaPalavras.add("CARRETA");
+        listaPalavras.add("ELEFANTE");
+        listaPalavras.add("MACACO");
+        listaPalavras.add("MELANCIA");
+        listaPalavras.add("ASFALTO");
+        listaPalavras.add("FORMULA");
+        listaPalavras.add("TREMEMBE");
+        listaPalavras.add("ESCOLA");
+        listaPalavras.add("UNIVERSIDADE");
 
         texto = findViewById(R.id.textView3);
 
@@ -162,6 +162,7 @@ public class TelaJogo extends AppCompatActivity implements View.OnClickListener 
             atualizaForca();
             CountWrong++;
             textWrong.setText(Integer.toString(CountWrong)+"/"+Integer.toString(listaImagens.size()));
+            CheckFinished();
 
         }
         else {
@@ -169,6 +170,7 @@ public class TelaJogo extends AppCompatActivity implements View.OnClickListener 
             atualizaTexto();
             CountCorrect++;
             textCorrect.setText(Integer.toString(CountCorrect));
+            CheckFinished();
 
         }
     }
@@ -210,8 +212,11 @@ public class TelaJogo extends AppCompatActivity implements View.OnClickListener 
             Box.setPositiveButton("Play", new DialogInterface.OnClickListener() {
 
                 @Override
-                public void onClick(DialogInterface dialogInterface, int i) {}
+                public void onClick(DialogInterface dialogInterface, int i) {
 
+                    inicializaJogo();
+
+                }
 
             }
             );
