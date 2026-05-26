@@ -16,10 +16,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.ArrayList;
-import java.util.Locale;
-
-public class MainActivityJogo extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
+public class TelaCadastro extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
 
     private EditText textWord;
 
@@ -36,7 +33,7 @@ public class MainActivityJogo extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main_jogo);
+        setContentView(R.layout.activity_tela_cadastro);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -44,7 +41,7 @@ public class MainActivityJogo extends AppCompatActivity implements View.OnClickL
 
         });
 
-        DB = new Database(MainActivityJogo.this);
+        DB = new Database(TelaCadastro.this);
         textWord = findViewById(R.id.TextWord);
         btnlog = findViewById(R.id.button2);
         btnlog.setOnClickListener(this);
@@ -115,7 +112,7 @@ public class MainActivityJogo extends AppCompatActivity implements View.OnClickL
 
         if(grupo == group){
             RadioButton temporary = findViewById(checkedId);
-            Toast.makeText(MainActivityJogo.this, temporary.getText().toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(TelaCadastro.this, temporary.getText().toString(), Toast.LENGTH_SHORT).show();
         }
 
     }

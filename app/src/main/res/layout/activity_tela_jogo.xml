@@ -21,7 +21,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/forca_0_9" />
     </LinearLayout>
 
@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:text="0"
+                    android:text="8"
                     android:textSize="34sp" />
             </LinearLayout>
         </LinearLayout>
